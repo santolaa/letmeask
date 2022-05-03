@@ -2,6 +2,18 @@
   <img alt="Letmeask" src=".github/logo.svg" width="160px">
 </p>
 
+<p align="center">
+  <img alt="Rocketseat" src="https://img.shields.io/badge/Created%20By%20-Rocketseat-purple" />
+
+  <img alt="Santola" src="https://img.shields.io/badge/Developed%20By%20-Santola-red" />
+
+  <img alt="License MIT" src="https://img.shields.io/badge/License%20-MIT-green" />
+
+  <img alt="React" src="https://img.shields.io/badge/-React-blue" />
+
+  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-yellow" />
+</p>
+
 <h1 align="center">
     <img alt="Letmeask" src=".github/cover.svg" />
 </h1>
