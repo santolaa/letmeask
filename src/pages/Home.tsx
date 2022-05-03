@@ -4,8 +4,8 @@ import logoImage from '../assets/images/logo.svg'
 import { database } from '../services/firebase'
 import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/Button'
-import { useAuth } from '../hooks/useAuth'
 import { FormEvent, useState } from 'react'
+import { useAuth } from '../hooks/useAuth'
 import '../styles/auth.scss'
 
 export function Home() {
@@ -32,6 +32,11 @@ export function Home() {
 
     if (!roomRef.exists()) {
       alert('Room does not exists.')
+      return
+    }
+
+    if (roomRef.val().closedAt) {
+      alert('Room already closed.')
       return
     }
 
