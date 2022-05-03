@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes } from 'react'
+import classname from 'classnames'
 import '../styles/button.scss'
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -8,7 +9,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 export function Button({ isOutlined = false, ...props }: ButtonProps) {
   return (
     <button
-      className={`button ${isOutlined ? 'outlined' : ''}`}
+      className={classname('button', { outlined: isOutlined })}
       {...props}
     />
   )
